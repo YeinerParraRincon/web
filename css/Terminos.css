@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color:#ddd;
+}
+*{
+    text-decoration: none;
+    text-align: center;
+}
+/*Titulos*/
+h1{
+    color: red;
+}
+/*Links*/
+.links{
+    background-color: black;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+.links:hover{
+    background-color: #1ea127;
+}
+/*Hiper vinculos*/
+a{
+    color: white;
+}
+/*Moviles*/
+@media (max-width: 768px) {
+    .navbar ul li a {
+        margin-right: 0; /* Elimina el margen en móviles */
+    }
+    .informacion {
+        width: 100%; /* Ajusta el ancho en móviles */
+    }
+}

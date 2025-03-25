@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una contraseña</title>
+    <link rel="stylesheet" href="../css/crearContraseña.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-container">
+            <nav class="hero-nav">
+                <div class="logo">AGRI<span>FORMEN</span></div>
+            </nav>
+    
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="pre-title">Conectando el campo con la ciudad</h4>
+                    <h1>Agricultura <span>Modernizada</span> Para Todos</h1>
+                    <div class="hero-highlight">
+                        <div class="line"></div>
+                        <p>Potenciamos el comercio agrícola con tecnología innovadora</p>
+                    </div>
+                    <a href="#" class="cta-button">
+                        Comenzar Ahora
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/crear.js"></script>
+    <form action="login.php" method="post" class="formulario"  id="formulario">
+        <div class="formulario-contenedor"><form action="login.php" method="post" class="formulario" id="formulario">
+            <div class="formulario-contenedor">
+                <h1>CREAR CUENTA</h1>
+                
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="correo" id="correo" placeholder="Ingrese tu correo" required>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese tu contraseña" required>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="contraseña-segunda" id="contraseña-segunda" placeholder="Repite la contraseña" required>
+                </div>
+                
+                <button type="submit" class="button">Crear cuenta</button>
+            </div>
+        </form>
+        </div>
+        </form>
+</body>
+</html>

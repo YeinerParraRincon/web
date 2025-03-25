@@ -1,0 +1,349 @@
+/*Todo el cuerpo*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #27ae60;
+}
+*{
+    text-decoration: none;
+    
+}
+/*Header*/
+.hero {
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.hero-nav {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2a5a3c;
+}
+
+.logo span {
+    color: #4a8b5c;
+    font-weight: 300;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3a8b5c;
+    transform: translateY(-2px);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem 5%;
+    gap: 3rem;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.pre-title {
+    color: #3a8b5c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #2a5a3c;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.hero-text h1 span {
+    color: #4a8b5c;
+    position: relative;
+}
+
+.hero-highlight {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: #4a8b5c;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.5rem;
+    background: #3a8b5c;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(58, 139, 92, 0.2);
+    animation: cambiar-border-botones 3s infinite;
+}
+@keyframes cambiar-border-botones {
+    0%{
+background-color: #3a8b5c;
+transform: scale(1);
+    }
+    50%{
+background-color: #2a5a3c;
+transform: scale(1.2);
+    }
+    100%{
+background-color: #4a8b5c;
+transform: scale(1.3);
+    }
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(58, 139, 92, 0.3);
+    background: #2d6d47;
+}
+
+.hero-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(234, 255, 241, 0.1) 0%, rgba(218, 255, 227, 0.2) 100%);
+}
+/*Info*/
+.info{
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    border: 2px solid #27ae60;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 60px;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.beneficios ul{
+    list-style: none;
+}
+/*Formulario*/
+.contenido-menu{
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 380px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    margin-left: 750px;
+    margin-top: -400px;
+    margin-bottom: 60px;
+    border-radius: 60px;
+    border: 2px solid #27ae60;
+}
+input {
+    width: 80%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   
+   input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+.btn-menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #3a8b5c;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(58, 139, 92, 0.2);
+    border: none;
+    animation: cambiar-border-botones 3s infinite;
+    cursor: pointer;
+}
+@keyframes cambiar-border-botones {
+    0%{
+background-color: #3a8b5c;
+transform: scale(1);
+    }
+    50%{
+background-color: #2a5a3c;
+transform: scale(1.1);
+    }
+    100%{
+background-color: #4a8b5c;
+transform: scale(1.2);
+    }
+}
+.btn-menu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(58, 139, 92, 0.3);
+    background: #2d6d47;
+}
+/*Js*/
+.comer {
+    border: 5px solid black;
+    width: 160px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: cambiar-border-color 5s infinite;
+}
+@keyframes cambiar-border-color{
+    0%{
+        border-color: #4acfee;
+    }
+    10%{
+        border-color: #53f8c9;
+    }
+    20%{
+        border-color: #5bbdff;
+    }
+    30%{
+        border-color: #6070fd;
+    }
+    40%{
+        border-color: #1ea127;
+    }
+    50%{
+        border-color: greenyellow;
+    }
+    60%{
+        border-color: #5bbfdf;
+    }
+    70%{
+        border-color: #4acfee;
+    }
+    80%{
+        border-color: #53f8c9;
+    }
+    90%{
+        border-color: #256f1d;
+    }
+    100%{
+        border-color: #a0d01ca2;
+    }
+}
+
+.comer img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.comer img:hover{
+    transform: scale(1.1);
+}
+.comer h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.comer p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.button-js {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-js:hover {
+    background-color: #219653;
+}
+.lista-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

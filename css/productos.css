@@ -1,0 +1,308 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #27ae60;
+}
+*{
+    text-decoration: none;
+}
+/*info*/
+.info{
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    border: 2px solid #27ae60;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 60px;
+    flex: 1;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.beneficios ul{
+    list-style: none;
+}
+.fa-money-bill-wave { color: #28a745; }
+.fa-balance-scale { color: #17a2b8; } 
+.destacados p { font-size: 1.1rem; } /* Mejor legibilidad */
+/*Contenido*/
+.acciones{
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    padding: 20px;
+    border-radius: 60px;
+    flex: 1;
+    width: 380px;
+    height: auto;
+    border: 2px solid #27ae60;
+    margin-bottom: 60px;
+    position: relative;
+    margin-left: 750px;
+    margin-top: -440px;
+}
+input {
+    width: 80%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   
+   input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+.button{
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.button:hover{
+    background-color: #1ea127;
+    border: 5px solid #1ea127;
+}
+/*Navegacion*/
+.hero{
+    background: linear-gradient(135deg, #f8fff7 0%, #e3f5da 100%);
+    min-height: 100vh;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-nav{
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-tittle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2a5a3c;
+}
+.hero-tittle span{
+    color: #4a8b5c;
+    font-weight: 300;
+}
+.hero-link{
+    display: flex;
+    gap: 2.5rem;
+}
+.hero-link a{
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 500; 
+    transition: all 0.3s ease;
+}
+.hero-link a:hover{
+    color: #3a8b5c;
+    transform: translateY(-2px);
+}
+.hero-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 5%;
+}
+.hero-text{
+    position: relative;
+    z-index: 2;
+}
+.hero-text h1{
+    font-size: 4rem;
+    color: #2a5a3c;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+.hero-text h1 span{
+    color: #4a8b5c;
+    position: relative;
+}
+.hero-text p{
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 500px;
+    line-height: 1.6;
+}
+.pre-title{
+    color: #3a8b5c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+.hero-highlight{
+    margin-bottom: 3rem;
+    position: relative;
+}
+.line{
+    width: 60px;
+    height: 3px;
+    background-color: #4a8b5c;
+    margin-bottom: 1rem;
+}
+.cta-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.5rem;
+    background: #3a8b5c;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(58, 139, 92, 0.2);
+    animation: cambiar-border-botones 3s infinite;
+}
+@keyframes cambiar-border-botones{
+    0%{
+        background-color: #3a8b5c;
+        transform: scale(1);
+            }
+            50%{
+        background-color: #2a5a3c;
+        transform: scale(1.2);
+            }
+            100%{
+        background-color: #4a8b5c;
+        transform: scale(1.3);
+            }
+}
+.cta-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(58,139,92, 0.3);
+    background-color: #2d6d47;
+}
+.hero-image{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+.hero-image img{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,rgba(234,255,241,0.1) 0%, rgba(218,255,227,0.2));
+}
+/*Js*/
+.producto img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.producto img:hover{
+    transform: scale(1.1);
+}
+.producto{
+    background-color: #1ea127;
+    width: 150px;
+    border: 5px solid #a1801e;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition:  0.3s ease;/*Este es para que tenga una transicion */
+    box-shadow: 0px 2px 5px rgba(0,0, 0, 0.4);
+    animation: cambia-borde-productos 3s infinite;
+}
+@keyframes cambia-borde-productos{
+    0%{
+        border-color: #4acfee;
+
+    }
+    25%{
+        border-color: #53f8c9;
+    }
+    50%{
+        border-color: #5bbdff;
+    }
+    75%{
+        border-color: #5bbfdf;
+    }
+    100%{
+        border-color: #6070fd;
+    }
+}
+.producto:hover{
+    transform: translateY(-5px);/*Este es para que  se mueva hacia arriba*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.button{
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    animation: cambiar-border-color 3s infinite;
+
+}
+@keyframes cambiar-border-color{
+    0%{
+        border-color: #4acfee;
+        background-color: #1ea127;
+    }
+    25%{
+        border-color: #53f8c9;
+        background-color: #4acfee;
+    }
+    50%{
+        border-color: #5bbdff;
+        background-color: #6070fd;
+    }
+    75%{
+        border-color: #5bbfdf;
+        background-color: #53f8c9;
+    }
+    100%{
+        border-color: #6070fd;
+        background-color: #1ea127;
+    }
+}
+#listaProductos{
+    display: flex;
+    flex-wrap: wrap;/*Esto es para que los productos se acomoden en una sola fila*/
+    gap: 50px;/*Esto es para que haya un espacio entre los productos*/
+    justify-content: center;/*Esto es para que los productos se centren*/
+}
+/*Moviles*/
+@media (max-width: 768px) {
+    .navbar ul li a {
+        margin-right: 0; /* Elimina el margen en móviles */
+    }
+    .informacion {
+        width: 100%; /* Ajusta el ancho en móviles */
+    }
+}

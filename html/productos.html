@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de las mejores calidades</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!--Navegacion-->
+<section class="hero">
+<div class="hero-contenedor">
+    <nav class="hero-nav">
+        <div class="hero-tittle">AGRI<span>FORMEN</span></div>
+        <div class="hero-link">
+            <a href="../index.html">Inicio</a>
+            <a href="../html/comerciantes.html">Comerciantes</a>
+            <a href="../html/productos.html">Productos</a>
+            <a href="../html/chats.html">Contacto</a>
+        </div>
+    </nav>
+    <div class="hero-1">
+        <div class="hero-text">
+            <h4 class="pre-title">Conectando el campo con la ciudad</h4>
+            <h1>Agricultura <span>Modernizada</span> Para Todos</h1>
+            <div class="hero-highlight">
+                <div class="line"></div>
+                <p>Potenciamos el comercio agrícola con tecnología innovadora</p>
+            </div>
+            <a href="../html/productos.html" class="cta-button">
+                Comenzar Ahora
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+                <div class="hero-image">
+                    <img src="../img/premium_photo-1661631063372-d997718d4064.avif" alt="Agricultor usando tecnología digital" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+    </div>
+</div>
+</section>
+<!--info-->
+<section class="info">
+    <h2>¡Maximiza tus ganancias agrícolas!</h2>
+    <div class="beneficios">
+        <div class="beneficios-sub">
+            <i class="fas fa-money-bill-wave"></i> <!-- Icono de transacciones -->
+            <h3>Tu puente con el mercado</h3>
+        </div>
+        <ul>
+            <li><i class="fas fa-balance-scale"></i> Compara ofertas de múltiples comerciantes</li>
+            <li><i class="fas fa-bell"></i> Alertas de precios en tiempo real</li>
+            <li><i class="fas fa-users"></i> Negocia directamente con compradores</li>
+            <li><i class="fas fa-percentage"></i> Sin intermediarios ni comisiones</li>
+        </ul>
+    </div>
+    <div class="destacados">
+        <p>🚜 Publica tu cosecha en 3 pasos<br>
+        💸 Recibe ofertas competitivas al instante<br>
+        📈 Historial de precios por temporada</p>
+    </div>
+</section>
+<!--Contenido-->
+        <div class="acciones">
+            <form id="formularioProducto">
+                <h2>Nombre del producto:</h2>
+                <input type="text" id="tipoproducto"   class="input" placeholder="Nombre del Producto"><br><br>
+                <h2>Precio del producto:</h2>
+                <input type="number"  id="precio"  class="input" placeholder="Precio del producto"><br><br>
+                <h2>Peso del producto:</h2>
+                <input type="text"  id="pesoproducto"  class="input" placeholder="Peso del producto"><br><br>
+                <h2>Imagen del producto:</h2>
+                <input type="file"  id="imagenproducto"  class="input" accept="image/*"><br><br>
+                <button class="button" id="button" type="submit">Subir producto</button><br><br>
+                <button onclick="limpiarLocalStorage()" class="button">Eliminar local Localstroge</button>
+            </form>
+        </div>
+    <!--Lista de productos-->
+    <div class="titulo" id="listaProductos">
+        <h2>Productos disponibles</h2>
+    </div>
+         <script src="../javascript/agricultores.js"></script>
+         <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
